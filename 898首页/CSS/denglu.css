@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+	margin:0;
+	padding:0
+}
+body, button, input, select, textarea {
+	font:12px/1.5 tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	
+}
+address, cite, dfn, em, var {
+	font-style:normal
+}
+
+small {
+	font-size:12px
+}
+ol, ul {
+	list-style:none
+}
+
+a {
+	text-decoration:none
+}
+/*a:hover {
+	text-decoration:underline
+}*/
+sup {
+	vertical-align:text-top
+}
+sub {
+	vertical-align:text-bottom
+}
+
+fieldset, img {
+	border:0;
+	vertical-align:top
+}
+button, input, select, textarea {
+	font-size:100%
+}
+table {
+	border-collapse:collapse;/* 重合的边框 合并*/
+	border-spacing:0
+}
+
+.clear {
+	clear:both;
+	height:0;
+	font-size:0;
+	overflow:hidden
+}
+.clearfix:after {
+	content:"\0020";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden
+}
+.clearfix {
+	clear:both;
+	zoom:1
+}
+body{ font-family:"Microsoft YaHei";}
+a:hover{ text-decoration:none;}
+
+/*-------------------------------------------清除默认*/
+
+
+/*-----------------------------总体划分*/
+.top{ height:30px; width:100%; background:#f6f6f6; border-bottom:1px solid #eaeaea;}
+.top .center{ width:1190px; margin:0 auto; height:100%;}
+
+.bread{ height:105px; width:100%; }
+.bread .center{ width:1190px; margin:0 auto; height:105px;}
+
+.main{ height:650px; width:100%; }
+.main .center{ width:1190px; margin:0 auto; height:650px; background:#fff; margin-top:5px;}
+
+.footer{ height:280px; width:100%;}
+.footer .center{ width:1190px; margin:0 auto; height:280px; background:#fff;}
+
+
+
+/*-----------------------top的填充*/
+.top .center p{ float:left; height:30px; line-height:30px; padding-left:8px; color:#666; }
+.top .center{position:relative;}
+.top .center .top-img img{ position:absolute; top:31px; left:0px; z-index:100; }
+.top .center p span{ padding-left:25px; padding-right:30px;}
+.top .center p .phone img{ vertical-align:middle;transition:transform 0.3s ease }
+.top .center .phone:hover img{ transform:rotate(180deg);}
+.top .center p a{ color:#666; padding-left:10px;}
+.top .center p a:hover{ color:#D43C3F;}
+.top .center ul{ float:right; }
+.top .center ul li{ float:left; width:120px; text-align:center; height:30px; line-height:30px;}
+.top .center ul li img{ transition:all 0.3s ease;}
+.top .center ul li:hover img{ transform:rotate(180deg);}
+.top .center ul li a:hover{ color:#D43C3F;}
+.top .center ul li ul{ height:120px; width:120px; display:none; position:absolute; z-index:100;}
+.top .center ul li ul li{ width:70px; height:30px; text-align:left; background:#f6f6f6; padding-left:20px;}
+.top .center ul li ul li a{ color:#666;}
+.top .center ul li ul li a:hover{ color:#D43C3F;}
+
+
+
+.top .center ul li img{ vertical-align:middle;}
+.top .center ul li span{ color:#666;}
+.top .center ul li a{ color:#666;}
+.top .center ul li span{ padding-left:30px;}
+
+
+
+/*---------------------------bread的填充*/
+.bread .center .bread-img{ height:105px; width:100%;  border-bottom:1px solid #eaeaea;}
+.bread .center .bread-img1{ float:left; padding-top:10px;}
+.bread .center .bread-img2{ float:right; padding-right:60px; padding-top:30px;}
+
+
+/*------------------------main的填充*/
+.main .center .main-wrap{ height:600px; padding-top:50px;}
+.main .center .main-left{ float:left; box-sizing:border-box; width:570px; height:570px;  padding-top:80px;}
+.main .center .main-right{ float:left; border:1px solid #eaeaea; box-sizing:border-box; width:480px; margin-left:120px;height:530px; }
+.main .center .main-right .right-center{ width:400px; padding-top:20px; margin:0 auto; height:500px;}
+
+.main .center .right-center-top{ padding-top:20px; width:100%; height:45px; border-bottom:1px solid #eaeaea;}
+.main .center .right-center-top p{ font-size:22px; font-weight:bold; padding-left:40px;}
+.main .center .right-center-top p .top-span1{ float:right; padding-right:40px; color:#666;}
+.main .center .right-center-top p .top-span{ display:inline-block; height:43px; width:110px; text-align:center; border-bottom:3px solid red;}
+.main .center .right-center-top p a{ color:#333;}
+
+
+.main .center .right-center-center ul{ padding-left:60px; padding-top:10px;}
+.main .center .right-center-center ul li{ padding-top:20px;}
+.main .center .right-center-center ul li a{ color:#666;}
+.main .center .right-center-center ul li #zhanghao{ height:40px; width:300px; text-align:center;}
+.main .center .right-center-center ul li #upass{ height:40px; width:300px; text-align:center;}
+
+.main .center .right-center-center ul .ul-li3 #ucheck{ vertical-align:middle;}
+.main .center .right-center-center ul .ul-li3 .li3-span1{ float:right; padding-right:40px;}
+.main .center .right-center-center ul .ul-li3 .li3-span2{ display:inline-block; height:20px; width:55px; text-align:center; border-bottom:1px solid #000000;}
+#ubut{ width:300px; height:40px; border:none; background:#ff3b3c; text-align:center; font-size:20px; color:#fff;}
+.main .center .right-center-center .tubiao{ padding-left:50px; padding-top:20px;}
+.main .center .right-center-center .tubiao img{ padding-left:10px;}
+
+
+
+/*--------------------------footer的填充*/
+.footer .center .footer-text>ul{ float:right; padding-top:30px;}
+.footer .center .footer-text>ul>li{ float:left; width:250px; padding-right:30px; text-align:center; font-size:16px;}
+.footer .center .footer-text>ul>li>a{ color:#666;}
+.footer .center .footer-text>ul>li>a:hover{ color:#ff3b3c;}
+
+
+.footer .center .footer-text>ul>li> .test-ul{ padding-top:10px; font-size:12px; width:150px; padding-left:100px; text-align:left;}
+.footer .center .footer-text>ul>li> .test-ul>li>a{ color:#999;}
+.footer .center .footer-text>ul>li> .footer-img{ padding-top:10px;}
+
+
+
+
+
+
+
+
+
+
+

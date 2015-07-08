@@ -1,0 +1,243 @@
+@charset "utf-8";
+/* CSS Document */
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+	margin:0;
+	padding:0
+}
+body, button, input, select, textarea {
+	font:12px/1.5 tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	
+}
+address, cite, dfn, em, var {
+	font-style:normal
+}
+
+small {
+	font-size:12px
+}
+ol, ul {
+	list-style:none
+}
+
+a {
+	text-decoration:none
+}
+/*a:hover {
+	text-decoration:underline
+}*/
+sup {
+	vertical-align:text-top
+}
+sub {
+	vertical-align:text-bottom
+}
+
+fieldset, img {
+	border:0;
+	vertical-align:top
+}
+button, input, select, textarea {
+	font-size:100%
+}
+table {
+	border-collapse:collapse;/* 重合的边框 合并*/
+	border-spacing:0
+}
+
+.clear {
+	clear:both;
+	height:0;
+	font-size:0;
+	overflow:hidden
+}
+.clearfix:after {
+	content:"\0020";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden
+}
+.clearfix {
+	clear:both;
+	zoom:1
+}
+body{ font-family:"Microsoft YaHei";}
+a:hover{ text-decoration:none;}
+
+/*-------------------------------------------清除默认*/
+
+
+/*-----------------------------总体划分*/
+.top{ height:30px; width:100%; background:#f6f6f6; border-bottom:1px solid #eaeaea;}
+.top .center{ width:1190px; margin:0 auto; height:100%;}
+
+.navi{ height:135px; width:100%;}
+.navi .center{ width:1190px; margin:0 auto; height:100%; background:#fff;}
+
+.bread{ height:40px; width:100%; background:#ff3b3c;}
+.bread .center{ width:1190px; margin:0 auto; height:100%; }
+
+.main{ height:1100px; width:100%;}
+.main .center{ width:1190px; margin:0 auto; height:100%; background:#fff;  }
+
+.footer{ height:500px; width:100%;}
+.footer .center{ width:1190px; margin:0 auto; height:100%; background:#fff; }
+
+
+
+
+/*-----------------------top的填充*/
+.top .center p{ float:left; height:30px; line-height:30px; padding-left:8px; color:#666; }
+.top .center{position:relative;}
+.top .center .top-img img{ position:absolute; top:31px; left:0px; z-index:100; }
+.top .center p span{ padding-left:25px; padding-right:30px;}
+.top .center p .phone img{ vertical-align:middle;transition:transform 0.3s ease }
+.top .center .phone:hover img{ transform:rotate(180deg);}
+.top .center p a{ color:#666; padding-left:10px;}
+.top .center p a:hover{ color:#D43C3F;}
+.top .center ul{ float:right; }
+.top .center ul li{ float:left; width:120px; text-align:center; height:30px; line-height:30px;}
+.top .center ul li img{ transition:all 0.3s ease;}
+.top .center ul li:hover img{ transform:rotate(180deg);}
+.top .center ul li a:hover{ color:#D43C3F;}
+.top .center ul li ul{ height:120px; width:120px; display:none; position:absolute; z-index:100;}
+.top .center ul li ul li{ width:70px; height:30px; text-align:left; background:#f6f6f6; padding-left:20px;}
+.top .center ul li ul li a{ color:#666;}
+.top .center ul li ul li a:hover{ color:#D43C3F;}
+
+
+
+.top .center ul li img{ vertical-align:middle;}
+.top .center ul li span{ color:#666;}
+.top .center ul li a{ color:#666;}
+.top .center ul li span{ padding-left:30px;}
+
+
+/*-------------------------------navi的填充*/
+.navi .center{ position:relative;}
+.navi .center .w{ position:absolute; top:80px; left:150px; float:left;}
+.navi .center .w a{ color:#858282;}
+.navi .center .w a:hover{ color:#ff3b3c;}
+.navi .center .w>p>option{ border:1px solid #c9c9c9;}
+.navi .center .w>p>option img{ vertical-align:middle; transition:all 0.3s ease;}
+.navi .center .w>p>option:hover img{ transform:rotate(180deg);}
+
+.navi-right>ul{ float:right;}
+.navi-right .pu>li{ float:left;}
+.navi-right>ul>li{ float:left; height:50px; line-height:50px; width:150px;}
+.navi-right ul .right-li1{ padding-left:20px; width:130px; color:red;}
+.navi-right ul .right-li2{ padding-left:40px; width:110px;}
+.navi-right ul .right-li3{ padding-left:82px; width:68px;}
+.navi-right ul .right-li4{ padding-left:110px; width:40px;}
+/*----------------------------bread的填充*/
+.bread .center .p{float:right; padding-right:100px;}
+.bread .center p{ float:left;   height:40px; line-height:40px; width:140px; text-align:center; font-size:16px;}
+.bread .center p img{ vertical-align:middle; padding-left:10px;}
+.bread .center p a{ color:#fff;}
+.bread .center p a:hover{ color:#f8f259;}
+.bread .center .bread-p1{ position:relative;}
+.bread .center .bread-p1 span{ position:absolute; top:2px; left:25px;}
+.bread .center .bread-p1 span:hover{ color:#dedede;}
+.bread .center ul li{ float:left; height:40px; line-height:40px; width:140px; text-align:center; border-right:1px solid #f46060;}
+.bread .center ul li:hover{ background:#E10707;}
+.bread .center ul li a{ display:block; font-size:16px; color:#fff;}
+.bread .center ul .bread-li{ border:none;}
+
+
+
+/*---------------------------main的填充*/
+.main-top{ height:40px; width:1190px; padding-top:30px;}
+.main-top>ul>li{ float:left; width:120px; height:40px; line-height:40px; font-size:18px; text-align:center; }
+.main-top>ul>li:hover,.main-top-li1{ background:#ff3b3c;}
+.main-top>ul>li a{ color:#333;}
+.main-top>ul>li a:hover{ color:#fff;}
+.main-top>ul .main-top-li1 a{ color:#fff;}
+.main-top .main-top-li2{ background:none; border-left:1px solid #eaeaea; border-right:1px solid #eaeaea;}
+.main-top .main-top-li3{ background:none;}
+
+
+.main-body{ height:750px; width:1190px; margin-top:30px; border:1px solid #eaeaea;}
+.main-body .body-center{ height:650px;width:1100px; margin:0 auto; }
+
+
+
+table{border-collapse: collapse;border-spacing: 0; margin-top:30px;}
+th ,td{border: 1px solid #eaeaea;}
+thead th{ height:50px; width:158px; font-size:16px; color:#333;}
+.shop{height:40px; line-height:40px; background:#f6f6f6; font-size:14px; }
+.shop td{ padding-left:20px;}
+.shop a{ padding-left:10px;}
+.shop a{ color:#333;}
+.shop a span{ color:#7f7f7f;}
+.shop-1{ float:right; padding-right:30px;}
+small{ padding-left:50px; color:#ef2937; padding-bottom:15px;}
+.shop input{ padding-top:15px;}
+.checkbox,.goods,.goods-1,.price,.count,.subtotal,.operation{text-align:center;}
+.count-input{ width:60px; text-align:center;}
+
+
+.goods-1,.price,.operation{ color:#333;}
+.goods-1:hover,.price{ color:#666;}
+.operation:hover{ color:#ff3b3c;}
+.subtotal{ color:#ff3b3c;}
+.chuxiao{ color:#dd923c;}
+
+
+.body-foot{ height:70px; width:100%; background:#f7f7f7;}
+.foot-p1{ padding-left:60px; padding-top:15px;}
+.foot-p1 a{ color:#717070;}
+.foot-p1 span{ color:#4da4d9;}
+.foot-p2{ float:right; padding-right:60px; padding-top:10px;}
+.foot-p2 a{ color:#717070;}
+.foot-p2 a span{ color:#ff3b3c;}
+
+
+
+.main-foot{ height:90px; border:1px solid #eaeaea; margin-top:50px;}
+
+.main-foot-p{ float:left; font-size:16px; color:#333; height:90px; line-height:90px; padding-left:10px;}
+.main-foot-p a{ color:#333;}
+.main-foot-p span:hover{ color:#ff3b3c;}
+.main-foot-p span{ padding-left:30px;}
+.main-foot-p1{ font-size:16px; color:#333; height:90px; line-height:90px; float:right; padding-right:30px;}
+
+.queren{ display:inline-block;height:40px; line-height:40px; text-align:center; color:#fff; font-size:18px; font-weight:bold; width:137px; background:#ff3b3c;}
+
+
+
+
+
+
+/*-----------------------------------footer的填充*/
+.footer-1{ height:90px; width:100%; background:#f5f5f5;}
+.footer-1>ul{ padding-left:40px;}
+.footer-1>ul>li{ float:left; width:170px; height:90px; padding-left:60px; line-height:90px;  font-size:16px; color:#333333; font-weight:bold; background:url(../img/foot1.png) 0px 18px  no-repeat;}
+.footer-1>ul .footer-li2{ background:url(../img/foot2.png) 0px 18px no-repeat;}
+.footer-1>ul .footer-li3{ background:url(../img/foot3.png) 0px 18px no-repeat;}
+.footer-1>ul .footer-li4{ background:url(../img/foote4.png) 0px 18px no-repeat;}
+.footer-1>ul .footer-li5{ background:url(../img/foote4.png) 0px 18px no-repeat;}
+
+.footer-2 .footer-2-ul{ padding-left:40px; padding-top:40px; height:200px;}
+.footer-2 .footer-2-ul>li{ float:left; width:220px; text-align:center; font-size:16px;}
+.footer-2 .footer-2-ul>li a{ color:#333;}
+.footer-2 .footer-2-ul>li a:hover{ color:#ff3b3c;}
+.footer-2 .footer-2-ul>li>ul{ padding-top:10px;}
+.footer-2 .footer-2-ul>li>ul>li{ font-size:12px;}
+
+.footer-2 .footer-2-ul>li .footer-2-ul1{ width:90px; text-align:left; margin-left:80px; height:100%;}
+
+
+.footer-4 p{ padding-bottom:5px;}
+.footer-4 p a{ color:#999;}
+.footer-4 p a:hover{ color:#666;}
+.footer-4 .foorer-p1{ width:100%; text-align:center;}
+.footer-4 .foorer-p2{ width:100%; text-align:center;}
+.footer-4 .foorer-p3{ width:100%; text-align:center;}
+
+
+
+
+
